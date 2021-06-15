@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>  Contact Us | Ultimo Real Estate   </title>
+  
+  <meta name="James Cotterell" content="      JAMES COTTERELL james.cotterell2@studytafensw.edu.au     ">
+
+  <link rel="stylesheet" href="ultimo_real_estate.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+
+<header>
+<img src="images/ultimo_real_estate_logo.png" width="625" height="160" style="max-width:100%;height:auto;" alt="Ultimo Real Estate, Sydney, Australia">
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="property.html">Property of the Week</a></li>
+<li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+<li><a href="agents.html">Agents</a></li>
+<li><a href="suburb_profile.html">Suburb Profile</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html" id="current">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section id="col1">
+
+<h1>Contact</h1>
+
+<ul>
+<li><strong>Ultimo Real Estate</strong></li>
+<li>20 Jones Street</li>
+<li>ULTIMO NSW 2007</li>
+</ul>
+
+
+<ul>
+<li><strong>Mob: +61 123 456 789</strong></li>
+<li>Tel: +612 1234 5678</li>
+<li>info@ultimorealestate.com.au</li>
+</ul>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau" width="550" height="592" allowfullscreen=""></iframe>
+
+</section>
+
+<section id="col2">
+                                
+<form id="myForm" method="post" action="formProcess.php" onsubmit="return newValidateForm()"> 
+ 	<div class="contactfield"><h1>Property enquiry</h1> <br>
+ 	 	<label for="fName"><b>First name:</b></label></br>
+ 		<input type="text" id="fName" minlength="1" maxlength ="50" title="Enter your first name" required placeholder="Your first name">
+ 	</div>
+
+   <div class="contactfield">
+ 	 	<label for="sName" title="Surname" ><b>Surname:</b></label><br>
+ 		<input type="text" id="sName" minlength="2" maxlength ="50" title="Enter your surname" required placeholder="Your surname">
+ 	</div>
+
+<!--minlength="10" maxlength ="10"-->
+ 	<div class="contactfield">
+ 	 	<label for="phone" title="Phone"><b>Phone:</b></label><br>
+ 	 	<input type="text" id="Phone" title = "Enter your phone here e.g. 0400100200, without spaces" placeholder="0400100200 (no spaces)" required>
+  	</div>
+
+  <div class="contactfield">
+ 	 	<label for="email" title="Email field"><b>Email address:</b></label><br>
+ 	 	<input type="text" id="Email" minlength="5" maxlength ="100" title="Email - e.g. your@email.com" required placeholder="your@email.com" >
+  	</div>
+
+  <div class="checkbox" input type="checkbox" title = "Property type checkboxes" required>
+  <label for="checkbox" title="Select your property type"><b>Select your property type:</b> </label><br>  
+  <input type="checkbox" id="Housecheckbox" name="House" value="House" title="House">
+    <label for="House" title="House">House</label><br>
+  <input type="checkbox" id="Apartcheckbox" name="apartment" value="Apartment" title="Apartment">
+    <label for="apartment" title="Apartment">Apartment</label><br>
+  <input type="checkbox" id="Townhousecheckbox" name="townhouse" title="Townhouse" value="Townhouse">
+    <label for="Townhouse" title="Townhouse">Townhouse</label>
+  </div>
+
+  <div class="radiobox" input type="radio" required> 
+   <label for="radiobox" title="Enquiry checkboxes"><b>Select your enquiry type</b>: </label><br> 
+  <input type="radio" id="Buyradiobox" name="radiobox" title="Buy" value="Buy">
+    <label for="Buy" title="Buy">Buy</label><br> 
+  <input type="radio" id="Sellradiobox" name="radiobox" title="Sell" value="Sell">
+    <label for="Sell" title="Sell">Sell</label><br>
+  <input type="radio" id="Rentradiobox" name="radiobox" title="Rent" value="Rent">
+    <label for="Rent" title="Rent">Rent</label>
+  </div>
+
+  <div class="rooms" input type="number" required title="Number of rooms required">
+ 	 	<label for="rooms" title="Rooms required"><b>Rooms required:<b></label><br>
+ 		<input type="number" id="rooms_input" min="0" max="6" title="Number of rooms  required - please select" placeholder="Please select (0-6)">
+ 	</div>
+
+  <div class="commentBox">
+  <label for="commentBox" title="Comment box"><b>Message:</b></label><br>
+   <textarea rows="4" name="commentBox" input type = "textbox" title = "Please enter your message here (if you wish!)" placeholder="Please enter your message here (if you wish!)"></textarea>
+  </div>
+  <p></p>
+  <input type="submit" value="Submit" title="Submit enquiry">
+
+
+</form>
+
+</section>
+
+
+</main>
+
+<footer>
+<ul>
+<li>&copy; Ultimo Real Estate 2021</li>
+<li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png" width="30" height="30" alt="Ultimo Real Estate on Facebook"></a></li>
+<li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png" width="30" height="30" alt="Ultimo Real Estate on Instagram"></a></li>
+<li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png" width="30" height="30" alt="Ultimo Real Estate on Twitter"></a></li>
+<li><a href="legals.html">Legals</a></li>
+</ul>
+</footer>
+
+
+</div>
+<script src="JS/contact.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html> 
+
+
