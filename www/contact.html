@@ -65,57 +65,57 @@
                                 
 <form id="myForm" method="post" action="formProcess.php" onsubmit="return newValidateForm()"> 
  	<div class="contactfield"><h1>Property enquiry</h1> <br>
- 	 	<label for="fName"><b>First name:</b></label></br>
- 		<input type="text" id="fName" minlength="1" maxlength ="50" title="Enter your first name" required placeholder="Your first name">
+ 	 	<label for="fName" label="First name"><b>First name:</b></label></br>
+ 		<input type="text" id="fName" label="First name" minlength="1" maxlength ="50" title="Enter your first name" required placeholder="Your first name">
  	</div>
 
    <div class="contactfield">
- 	 	<label for="sName" title="Surname" ><b>Surname:</b></label><br>
- 		<input type="text" id="sName" minlength="2" maxlength ="50" title="Enter your surname" required placeholder="Your surname">
+ 	 	<label for="sName" title="Surname" label="Surname" ><b>Surname:</b></label><br>
+ 		<input type="text" id="sName" label="Surname" minlength="2" maxlength ="50" title="Enter your surname" required placeholder="Your surname">
  	</div>
 
 <!--minlength="10" maxlength ="10"-->
  	<div class="contactfield">
- 	 	<label for="phone" title="Phone"><b>Phone:</b></label><br>
- 	 	<input type="text" id="Phone" title = "Enter your phone here e.g. 0400100200, without spaces" placeholder="0400100200 (no spaces)" required>
+ 	 	<label for="phone" title="Phone" label="Phone"><b>Phone:</b></label><br>
+ 	 	<input type="text" id="Phone" label="Phone" title = "Enter your phone here e.g. 0400100200, without spaces" placeholder="0400100200 (no spaces)" required>
   	</div>
 
   <div class="contactfield">
- 	 	<label for="email" title="Email field"><b>Email address:</b></label><br>
- 	 	<input type="text" id="Email" minlength="5" maxlength ="100" title="Email - e.g. your@email.com" required placeholder="your@email.com" >
+ 	 	<label for="email" title="Email field" label="Email address"><b>Email address:</b></label><br>
+ 	 	<input type="text" id="Email" label="Email" minlength="5" maxlength ="100" title="Email - e.g. your@email.com" required placeholder="your@email.com" >
   	</div>
 
-  <div class="checkbox" input type="checkbox" title = "Property type checkboxes" required>
+  <div class="checkbox" input type="checkbox" title = "Property type checkboxes" label="Property type" required>
   <label for="checkbox" title="Select your property type"><b>Select your property type:</b> </label><br>  
-  <input type="checkbox" id="Housecheckbox" name="House" value="House" title="House">
+  <input type="checkbox" id="Housecheckbox" name="House" value="House" title="House" label="House">
     <label for="House" title="House">House</label><br>
-  <input type="checkbox" id="Apartcheckbox" name="apartment" value="Apartment" title="Apartment">
+  <input type="checkbox" id="Apartcheckbox" name="apartment" value="Apartment" title="Apartment" label="Apartment">
     <label for="apartment" title="Apartment">Apartment</label><br>
   <input type="checkbox" id="Townhousecheckbox" name="townhouse" title="Townhouse" value="Townhouse">
-    <label for="Townhouse" title="Townhouse">Townhouse</label>
+    <label for="Townhouse" title="Townhouse" label="Townhouse">Townhouse</label>
   </div>
 
   <div class="radiobox" input type="radio" required> 
    <label for="radiobox" title="Enquiry checkboxes"><b>Select your enquiry type</b>: </label><br> 
-  <input type="radio" id="Buyradiobox" name="radiobox" title="Buy" value="Buy">
+  <input type="radio" id="Buyradiobox" name="radiobox" title="Buy" label="Buy" value="Buy">
     <label for="Buy" title="Buy">Buy</label><br> 
-  <input type="radio" id="Sellradiobox" name="radiobox" title="Sell" value="Sell">
+  <input type="radio" id="Sellradiobox" name="radiobox" title="Sell" label="Sell" value="Sell">
     <label for="Sell" title="Sell">Sell</label><br>
-  <input type="radio" id="Rentradiobox" name="radiobox" title="Rent" value="Rent">
+  <input type="radio" id="Rentradiobox" name="radiobox" title="Rent" label="Rent" value="Rent">
     <label for="Rent" title="Rent">Rent</label>
   </div>
 
   <div class="rooms" input type="number" required title="Number of rooms required">
- 	 	<label for="rooms" title="Rooms required"><b>Rooms required:<b></label><br>
- 		<input type="number" id="rooms_input" min="0" max="6" title="Number of rooms  required - please select" placeholder="Please select (0-6)">
+ 	 	<label for="rooms" title="Rooms required" label="Rooms required"><b>Rooms required:<b></label><br>
+ 		<input type="number" id="rooms_input" label="Rooms required" min="0" max="6" title="Number of rooms  required - please select" placeholder="Please select (0-6)">
  	</div>
 
   <div class="commentBox">
-  <label for="commentBox" title="Comment box"><b>Message:</b></label><br>
-   <textarea rows="4" name="commentBox" input type = "textbox" title= "Please enter your message here (if you wish!)" placeholder="Please enter your message here (if you wish!)"></textarea>
+  <label for="commentBox" title="Comment box" label = "Comment box"><b>Message:</b></label><br>
+   <textarea rows="4" name="commentBox" input type = "textbox" title= "Please enter your message here (if you wish!)" label="Comment box" placeholder="Please enter your message here (if you wish!)"></textarea>
   </div>
   <p></p>
-  <input type="submit" value="Submit" title="Submit enquiry">
+  <input type="submit" value="Submit" title="Submit enquiry" label="Submit enquiry button">
 
 
 </form>
