@@ -1,18 +1,20 @@
-// This slideshow has been modified from code developed by W3Schools
-// The code was originally distributed under a Creative Commons license.
-// Modification is permitted and encouraged.
-// No attribution for the modified aspect of the code is required by the author.
+// This slideshow has been modified from code developed by W3Schools (Refsnes Data). All copyright belongs to W3Schools(Refsnes Data).
+
+// This accordion/panel function allows the user to click the selected question they
+// wish to view the answer for. 'onClick', the user will be shown the corresponding answer. Each time a question is clicked, all open panels will be shut, and only the corresponding answer will be shown.
 
 // Identiying the element to be manipulated 'accordion'
-var acc = document.getElementsByClassName("accordion");
+var accordion = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) {
+for (i = 0; i < accordion.length; i++) {
   // On click the panel (answer) will open beneath the question
-  acc[i].addEventListener("click", function() {
+  accordion[i].addEventListener("click", function() {
     // The variable a is the currently active question
-    for (a = 0; a < acc.length; a++) {
-      var current = acc[a];
+    for (a = 0; a < accordion.length; a++) {
+      var current = accordion[a];
+      
+      // This is where the code has been modified:
       // The current class is removed when another question is clicked.
       // A child has been created for each question the user clicks next.
       var child = current.nextElementSibling;
@@ -26,7 +28,7 @@ for (i = 0; i < acc.length; i++) {
     to highlight the button that controls the panel */
     this.classList.toggle("active");
 
-  for (i = 0; i < acc.length; i++)
+  for (i = 0; i < accordion.length; i++)
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {

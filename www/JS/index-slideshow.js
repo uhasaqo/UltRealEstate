@@ -1,7 +1,8 @@
-// This slideshow has been modified from code developed by W3Schools
-// The code was originally distributed under a Creative Commons license.
-// Modification is permitted and encouraged.
-// No attribution for the modified aspect of the code is required by the author.
+// This slideshow has been modified from code developed by W3Schools (Refsnes Data). All copyright belongs to W3Schools(Refsnes Data).
+
+// This code generates an image slideshow the user can view. If the client wishes to add new images, this should be done in the relevant divs in the index.html page.
+// The slideshow has a previous and next button, as well as selector dots that move 
+// between 'active' classes (i.e. the default state when the page loads (i.e. the first image) or when they have been selected by the user by clicking through the slideshow).
 
 // Setting the starting index of the slideshow as 1
 var slideIndex = 1;
