@@ -2,7 +2,8 @@
 // Date created: 10/06/2021
 // Author: James Cotterell © 2021 (CC Attribution-NoDerivs)
 //------------------------------------------------------------------------------
-// This function will validate user input on a contact form.
+// This function will validate user input on a contact form on a client-side browser
+// that supports JavaScript.
 
 // First it will print to the console that the script is running.
 
@@ -12,7 +13,7 @@
 // Validation is conditional on the <validPatternName>.test(<ID>.value) format //
 // matching the regular expression ('if' the condition is met then 'else if' etc).
 
-// If an invalid field is detected, a JS popup will appear prompting the user of ./// the issue. 
+// If an invalid field is detected, a JS popup will appear alerting user of the issue. 
 
 // If all information is validated, a dialog box will prompt the user
 // to either submit or cancel their enquiry (and return to the form with their
@@ -32,6 +33,7 @@ function newValidateForm() {
     const validPatternsName = /^[a-zA-Z ]+$/;
     const validPatternPhone = /^(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})+$/;
     const validPatternEmail = /(?:[a-zA-Z0-9+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+
     // This regular expression will prevent against XSS, SQL injection, CSRF attacks, by restricting what characters can be entered into the comment box
     const validPatterncommentBox = /^[a-zA-Z0-9., -]+$/;
 
@@ -55,25 +57,25 @@ function newValidateForm() {
 
     // Email validation condition - checking IF NOT fName regular expression
     if (!checkfName) {
-        alert("First name is invalid");
+        alert("First name is invalid.");
         return false;
     }
 
     //Surname validation condition - checking IF NOT
     else if (!checksName) {
-        alert("Surname is invalid");
+        alert("Surname is invalid.");
         return false;
     }
 
     // Phone validation condition - checking IF NOT
     else if (!checkPhone) {
-        alert("Phone is invalid");
+        alert("Phone is invalid.");
         return false;
     }
 
     // Email validation condition - checking IF NOT
     else if (!checkEmail) {
-        alert("Email is invalid");
+        alert("Email is invalid.");
         return false;
     }
 

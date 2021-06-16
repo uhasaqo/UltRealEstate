@@ -1,3 +1,9 @@
+// This slideshow has been modified from code developed by W3Schools
+// The code was originally distributed under a Creative Commons license.
+// Modification is permitted and encouraged.
+// No attribution for the modified aspect of the code is required by the author.
+
+// Identiying the element to be manipulated 'accordion'
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -7,7 +13,8 @@ for (i = 0; i < acc.length; i++) {
     // The variable a is the currently active question
     for (a = 0; a < acc.length; a++) {
       var current = acc[a];
-      // The current class is removed when another question is clicked
+      // The current class is removed when another question is clicked.
+      // A child has been created for each question the user clicks next.
       var child = current.nextElementSibling;
       if (child.style.display === "block") {
         current.classList.remove("active");

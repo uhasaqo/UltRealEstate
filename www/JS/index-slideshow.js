@@ -1,8 +1,13 @@
-// Setting the starting index of the slideshow
+// This slideshow has been modified from code developed by W3Schools
+// The code was originally distributed under a Creative Commons license.
+// Modification is permitted and encouraged.
+// No attribution for the modified aspect of the code is required by the author.
+
+// Setting the starting index of the slideshow as 1
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Next/previous controls of the slideshow
 function plusSlides(n) {
   showSlides(slideIndex += n)
 }
@@ -11,7 +16,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n)
 }
-// Function that executs the slideshow
+// Function that executes the slideshow
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -21,7 +26,7 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  // Replacing the selector dot to match the current slide
+  // Adjusting the selector dot to match the current slide
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace("active", "");
   }

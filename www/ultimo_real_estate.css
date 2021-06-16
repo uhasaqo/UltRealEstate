@@ -379,3 +379,36 @@ text-decoration: none;
   .nav:a {
     display: block;
   }}
+
+  @media screen and ( max-width: 400px ) {
+
+    .main {
+        min-height: 30vh;
+
+    }
+    
+  .main-nav {
+      display: block;  
+      justify-self:start;
+        flex-direction: column;
+        grid-row: span 2;
+        
+    }
+
+    .card {
+        max-width:fit-content;
+        grid-column: span 6;
+        padding-top: 0px;
+        padding-bottom:0px;
+        padding: 10px 10px;
+    }
+        
+    .img {
+        height: 200px; 
+    }
+
+    .main { 
+        margin: auto 10px;
+    }
+
+  }
