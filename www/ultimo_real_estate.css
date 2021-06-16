@@ -211,7 +211,7 @@ text-decoration: none;
   width: auto;
   margin-top: -300px;
   padding: 20px;
-  color: rgb(255, 221, 29);
+  color: rgb(255, 219, 17);
   font-weight: bold;
   transition: 2.6s ease;
   border-radius: 0 3px 3px 0;
@@ -249,7 +249,7 @@ text-decoration: none;
 
 /* Slideshow picture number text (1/3 etc) */
 .numbertext {
-  color: rgb(255, 221, 29);
+  color: rgb(255, 219, 17);
   background-color: rgba(18, 19, 19, 0.8);
   opacity: 80%;
   font-size: 16px;
