@@ -1,6 +1,11 @@
-// This slideshow has been modified from code developed by W3Schools (Refsnes Data). All copyright belongs to W3Schools(Refsnes Data).
+// This slideshow has been modified from code developed by W3Schools (Refsnes Data). All
+// copyright belongs to W3Schools(Refsnes Data). Initial code was issued under a CC 
+// Attribution-NonCommercial license. The modification of this code has been done for 
+// research purposes only.
 
-// This code generates an image slideshow the user can view. If the client wishes to add new images, this should be done in the relevant divs in the index.html page.
+// This code generates an image slideshow the user can view. If the client wishes to 
+// add new images, this should be done in the relevant divs in the index.html page.
+//
 // The slideshow has a previous and next button, as well as selector dots that move 
 // between 'active' classes (i.e. the default state when the page loads (i.e. the first image) or when they have been selected by the user by clicking through the slideshow).
 

@@ -1,7 +1,9 @@
-// This slideshow has been modified from code developed by W3Schools (Refsnes Data). All copyright belongs to W3Schools(Refsnes Data).
+// This slideshow has been modified from code developed by W3Schools (Refsnes Data). All copyright belongs to W3Schools(Refsnes Data). Initial code was issued under a CC Attribution-NonCommercial license. The modification of this code has been done for research purposes only.
 
 // This accordion/panel function allows the user to click the selected question they
-// wish to view the answer for. 'onClick', the user will be shown the corresponding answer. Each time a question is clicked, all open panels will be shut, and only the corresponding answer will be shown.
+// wish to view the answer for. 'onClick', the user will be shown the corresponding answer. 
+// Each time a question is clicked, all open panels will be shut, and only the corresponding
+// answer will be shown.
 
 // Identiying the element to be manipulated 'accordion'
 var accordion = document.getElementsByClassName("accordion");
