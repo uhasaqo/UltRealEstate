@@ -82,6 +82,7 @@ margin: auto;
 
 #col2 {
 	margin-left: 50px;
+  margin-top: 10px;
 }
 
 form {
@@ -285,12 +286,12 @@ text-decoration: none;
 }
 
 /* Fading animation on slideshow and FAQ accordion panels */
-.fade {
+.accordionfade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-fill-mode: forwards; 
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
   animation-fill-mode: forwards; 
 }
 
