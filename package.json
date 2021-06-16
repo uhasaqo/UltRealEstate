@@ -14,7 +14,7 @@
       "build": "npm run-script build",
       "test": "npm run-script test",
       "eject": "npm run-script eject",
-      "predeploy": "npm run build",
+      "predeploy": "gh pages -b build",
       "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
